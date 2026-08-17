@@ -1,0 +1,4 @@
+SECURITY_AUDIT.md
+*.pdf.backup
+
+.SECURITY_AUDIT.local.md
