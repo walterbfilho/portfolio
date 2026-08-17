@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>walter@portfolio:~ — Desenvolvedor Salesforce</title>
+  <meta name="description" content="Portfólio de Walter Barreto — Desenvolvedor Salesforce (Apex, LWC), integrações REST e SAP. Cases em hotelaria, energia, telecom, solar e finanças." />
+  <meta name="author" content="Walter Barreto" />
+  <meta name="theme-color" content="#0a0e14" />
+
+  <meta property="og:title" content="walter@portfolio:~ — Desenvolvedor Salesforce" />
+  <meta property="og:description" content="Cases reais de Salesforce, integrações REST e SAP, LWC e portais Experience Cloud." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+  <!-- TERMINAL WINDOW -->
+  <div class="terminal" id="top">
+
+    <!-- TOP BAR -->
+    <header class="term-bar" role="banner">
+      <div class="term-dots" aria-hidden="true">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="term-title">walter@portfolio: ~/walter-barreto</div>
+      <nav class="term-tabs" aria-label="Seções">
+        <a href="#whoami">whoami</a>
+        <a href="#stack">stack</a>
+        <a href="#cases">cases</a>
+        <a href="#journey">journey</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <main class="term-body">
+
+      <!-- WHOAMI / HERO -->
+      <section id="whoami" class="block">
+        <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~</span>$ <span class="cmd">whoami</span></p>
+        <pre class="out">
+<span class="hl">Walter Barreto</span>
+Desenvolvedor Salesforce — Recife/PE.
+
+Trabalho com Apex, SOQL, LWC e integrações REST
+há mais de 3 anos na DreamExperience. A maior
+parte do meu tempo é em integrações entre o
+Salesforce e sistemas externos (SAP, gateways
+de pagamento, portais).</pre>
+
+        <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~</span>$ <span class="cmd">ls -la sections/</span></p>
+        <pre class="out muted">drwxr-xr-x  walter  <a href="#stack">stack/</a>
+drwxr-xr-x  walter  <a href="#cases">cases/</a>
+drwxr-xr-x  walter  <a href="#journey">journey/</a>
+drwxr-xr-x  walter  <a href="#contact">contact/</a>
+-rw-r--r--  walter  <a href="#education">education.md</a></pre>
+
+        <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~</span>$ <span class="cursor"></span></p>
+      </section>
+
+      <hr class="rule" />
+
+      <!-- STACK -->
+      <section id="stack" class="block">
+        <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~/stack</span>$ <span class="cmd">cat stack.json</span></p>
+
+        <pre class="out json"><span class="punct">{</span>
+  <span class="key">"plataforma_salesforce"</span><span class="punct">:</span> <span class="punct">[</span>
+    <span class="str">"Apex"</span><span class="punct">,</span> <span class="str">"SOQL"</span><span class="punct">,</span> <span class="str">"LWC"</span><span class="punct">,</span>
+    <span class="str">"Sales Cloud"</span><span class="punct">,</span> <span class="str">"Service Cloud"</span><span class="punct">,</span> <span class="str">"Experience Cloud"</span><span class="punct">,</span>
+    <span class="str">"Automações e configuração declarativa"</span>
+  <span class="punct">],</span>
+  <span class="key">"linguagens"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Apex"</span><span class="punct">,</span> <span class="str">"Java"</span><span class="punct">,</span> <span class="str">"JavaScript"</span><span class="punct">,</span> <span class="str">"Python"</span><span class="punct">],</span>
+  <span class="key">"integracoes"</span><span class="punct">:</span> <span class="punct">[</span>
+    <span class="str">"APIs REST (exposição e consumo)"</span><span class="punct">,</span>
+    <span class="str">"Gateways de pagamento — Vindi"</span><span class="punct">,</span>
+    <span class="str">"Reclame Aqui (POST/GET)"</span><span class="punct">,</span>
+    <span class="str">"SAP"</span>
+  <span class="punct">],</span>
+  <span class="key">"fundamentos"</span><span class="punct">:</span> <span class="punct">[</span>
+    <span class="str">"POO"</span><span class="punct">,</span> <span class="str">"Lógica e estruturas de dados"</span>
+  <span class="punct">],</span>
+  <span class="key">"praticas"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Git"</span><span class="punct">,</span> <span class="str">"Code review"</span><span class="punct">,</span> <span class="str">"Metodologias ágeis"</span><span class="punct">],</span>
+  <span class="key">"idiomas"</span><span class="punct">:</span> <span class="punct">{</span> <span class="key">"pt"</span><span class="punct">:</span> <span class="str">"nativo"</span><span class="punct">,</span> <span class="key">"en"</span><span class="punct">:</span> <span class="str">"intermediário"</span> <span class="punct">}</span>
+<span class="punct">}</span></pre>
+      </section>
+
+      <hr class="rule" />
+
+      <!-- CASES -->
+      <section id="cases" class="block">
+        <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~/cases</span>$ <span class="cmd">ls -1</span></p>
+        <pre class="out muted">01_hotelaria_turismo.md
+02_energia.md
+03_independentes_multissetor.md</pre>
+
+        <!-- CASE 01 -->
+        <article class="case">
+          <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~/cases</span>$ <span class="cmd">cat 01_hotelaria_turismo.md</span></p>
+          <div class="case-card">
+            <header>
+              <span class="case-id">case/01</span>
+              <h2># Hotelaria &amp; Turismo</h2>
+              <p class="case-sub">Atendimento digital e portal de relacionamento para rede de resorts.</p>
+              <ul class="tags">
+                <li>Service Cloud</li>
+                <li>Experience Cloud</li>
+                <li>Apex</li>
+                <li>LWC</li>
+                <li>API REST</li>
+                <li>Vindi</li>
+                <li>Reclame Aqui</li>
+              </ul>
+            </header>
+
+            <div class="case-section">
+              <h3>## contexto</h3>
+              <p>
+                Rede de resorts precisava modernizar o atendimento ao hóspede e
+                centralizar pagamentos, reclamações e pesquisa de satisfação dentro
+                do Salesforce.
+              </p>
+            </div>
+
+            <div class="case-section">
+              <h3>## desafio</h3>
+              <p>
+                Conectar o Salesforce a sistemas externos críticos (gateway de
+                pagamento e Reclame Aqui), criar um portal próprio para os hóspedes
+                e expor APIs para consumo por outras áreas — sem perder a experiência
+                de atendimento.
+              </p>
+            </div>
+
+            <div class="case-section">
+              <h3>## o que eu entreguei</h3>
+              <ul class="md-list">
+                <li>Desenvolvimento em <strong>Service Cloud</strong> com chatbots de atendimento.</li>
+                <li>Integração com o gateway de pagamento <strong>Vindi</strong>.</li>
+                <li>Integração com o <strong>Reclame Aqui</strong> (POST e GET).</li>
+                <li>Portal em <strong>Experience Cloud</strong> com componente <strong>LWC totalmente customizado</strong> de pesquisa de satisfação.</li>
+                <li>Desenvolvimento de <strong>APIs de exposição</strong> para consumo externo.</li>
+              </ul>
+            </div>
+
+            <div class="case-section">
+              <h3>## resultado</h3>
+              <p>
+                Atendimento, pagamento e tratamento de reclamações passaram a viver
+                em uma única jornada digital, com dados consolidados no Salesforce
+                e visibilidade em tempo real para a operação.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASE 02 -->
+        <article class="case">
+          <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~/cases</span>$ <span class="cmd">cat 02_energia.md</span></p>
+          <div class="case-card">
+            <header>
+              <span class="case-id">case/02</span>
+              <h2># Energia</h2>
+              <p class="case-sub">Portais externos, aprovações de VPs e a linha de frente das integrações.</p>
+              <ul class="tags">
+                <li>Experience Cloud</li>
+                <li>Sales Cloud</li>
+                <li>LWC</li>
+                <li>Apex</li>
+                <li>REST</li>
+              </ul>
+            </header>
+
+            <div class="case-section">
+              <h3>## contexto</h3>
+              <p>
+                Empresa do setor de geração e comercialização de energia, com
+                forte demanda por portais externos para clientes corporativos e
+                fluxos de aprovação em nível executivo.
+              </p>
+            </div>
+
+            <div class="case-section">
+              <h3>## desafio</h3>
+              <p>
+                Estar envolvido com <strong>a maior parte das integrações de
+                comunicação com o Salesforce</strong>, mantendo estabilidade e
+                clareza — de analistas a VPs.
+              </p>
+            </div>
+
+            <div class="case-section">
+              <h3>## o que eu entreguei</h3>
+              <ul class="md-list">
+                <li>Diversas integrações de <strong>exposição</strong> para portais de clientes externos.</li>
+                <li><strong>Componentes LWC complexos</strong> para visibilidade de aprovações de VPs.</li>
+                <li>Trabalho intenso em <strong>Experience Cloud + Sales Cloud</strong>.</li>
+                <li>Relacionamento próximo com o cliente — sou o dev da equipe que mais viaja a São Paulo, pela afinidade e capacidade de resolver problemas em campo.</li>
+              </ul>
+            </div>
+
+            <div class="case-section">
+              <h3>## resultado</h3>
+              <p>
+                Virei ponto de referência técnica das integrações desse cliente, com
+                presença em reuniões executivas e capacidade de destravar problemas
+                que envolvem múltiplos sistemas.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASE 03 -->
+        <article class="case">
+          <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~/cases</span>$ <span class="cmd">cat 03_independentes_multissetor.md</span></p>
+          <div class="case-card">
+            <header>
+              <span class="case-id">case/03</span>
+              <h2># Projetos independentes — multissetor</h2>
+              <p class="case-sub">Integrações com SAP e customização Salesforce em cinco segmentos.</p>
+              <ul class="tags">
+                <li>SAP ↔ Salesforce</li>
+                <li>Telecom</li>
+                <li>Energia Solar</li>
+                <li>Enterprise</li>
+                <li>Finanças</li>
+              </ul>
+            </header>
+
+            <div class="case-section">
+              <h3>## contexto</h3>
+              <p>
+                Fora da consultoria onde sou CLT, conduzi projetos próprios para
+                clientes em segmentos distintos — todos com necessidade de conectar
+                Salesforce a sistemas corporativos e adaptar o ambiente para o uso
+                das equipes.
+              </p>
+            </div>
+
+            <div class="case-section">
+              <h3>## desafio</h3>
+              <p>
+                Lidar com cinco realidades de negócio diferentes ao mesmo tempo,
+                traduzindo cada uma em automações, integrações e telas adequadas.
+              </p>
+            </div>
+
+            <div class="case-section">
+              <h3>## o que eu entreguei</h3>
+              <ul class="md-list">
+                <li><strong>Integração com SAP</strong>, conectando o Salesforce a sistemas corporativos de gestão.</li>
+                <li><strong>Telecomunicações</strong> — desenvolvimento e customização específicas do setor.</li>
+                <li><strong>Enterprise</strong> — projetos de grande porte e escopo corporativo.</li>
+                <li><strong>Energia solar</strong> — automações e soluções específicas do segmento.</li>
+                <li><strong>Consultoria financeira</strong> — customização de ambientes e integrações.</li>
+              </ul>
+            </div>
+
+            <div class="case-section">
+              <h3>## resultado</h3>
+              <p>
+                Ganhei vivência multissetorial e amadureci a forma de iniciar projetos
+                — entendendo regras de negócio diferentes e desenhando integrações que
+                conversam com o Salesforce sem virar gambiarra de meio.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <hr class="rule" />
+
+      <!-- JOURNEY -->
+      <section id="journey" class="block">
+        <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~/journey</span>$ <span class="cmd">git log --oneline --decorate career.log</span></p>
+
+        <pre class="out gitlog"><span class="commit">* a1c4f2e</span> <span class="ref">(HEAD → main, current)</span> <span class="msg">Pleno III</span>    <span class="muted">dez/2025 → presente</span>
+<span class="commit">* 8d27fa1</span>                         <span class="msg">Pleno II</span>     <span class="muted">mar/2025 → dez/2025</span>
+<span class="commit">* 4e9c102</span>                         <span class="msg">Pleno I</span>      <span class="muted">ago/2024 → mar/2025</span>
+<span class="commit">* 1c0d8b3</span>                         <span class="msg">Júnior III</span>   <span class="muted">jan/2024 → ago/2024</span>
+<span class="commit">* 9a5e220</span>                         <span class="msg">Júnior II</span>    <span class="muted">abr/2023 → jan/2024</span>
+<span class="commit">* f0a1234</span> <span class="ref">(tag: estagio)</span>          <span class="msg">Estágio</span>      <span class="muted">dez/2022 → abr/2023</span>
+<span class="indent">|</span>
+<span class="commit">o</span> <span class="muted">início — DreamExperience — Recife/PE — remoto/híbrido</span></pre>
+      </section>
+
+      <hr class="rule" />
+
+      <!-- EDUCATION -->
+      <section id="education" class="block">
+        <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~</span>$ <span class="cmd">cat education.md</span></p>
+        <pre class="out">
+<span class="hl">## Formação</span>
+
+<strong>CESAR School</strong> — 2022 – 2025
+Bacharelado em Ciência da Computação.
+
+<span class="hl">## Idiomas</span>
+
+- Português  → nativo
+- Inglês     → intermediário</pre>
+      </section>
+
+      <hr class="rule" />
+
+      <!-- CONTACT -->
+      <section id="contact" class="block">
+        <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~</span>$ <span class="cmd">./contact --open</span></p>
+
+        <div class="contact">
+          <div class="contact-row">
+            <span class="key">email</span>
+            <a href="mailto:andrebarreto.filho@gmail.com">andrebarreto.filho@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="key">phone</span>
+            <a href="tel:+5581998076626">+55 81 99807-6626</a>
+          </div>
+          <div class="contact-row">
+            <span class="key">linkedin</span>
+            <a href="https://www.linkedin.com/in/walter-barreto-947956241/" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/walter-barreto-947956241
+            </a>
+          </div>
+          <div class="contact-row">
+            <span class="key">location</span>
+            <span>Recife — Pernambuco — Brasil</span>
+          </div>
+        </div>
+
+        <p class="line"><span class="prompt">walter@portfolio</span><span class="path">:~</span>$ <span class="cmd">exit</span></p>
+        <p class="line muted">// obrigado por chegar até aqui. <span class="cursor"></span></p>
+      </section>
+
+      <footer class="term-footer">
+        <p>© <span id="year"></span> Walter Barreto · Recife/PE · Construído à mão em HTML, CSS e JavaScript.</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>

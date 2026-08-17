@@ -1,0 +1,36 @@
+[build]
+  publish = "."
+
+# ── Block internal docs from being served publicly (MEDIUM-01) ──
+[[redirects]]
+  from = "/*.md"
+  to = "/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/*.toml"
+  to = "/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/SECURITY_AUDIT*"
+  to = "/"
+  status = 404
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; base-uri 'self'; form-action 'self'"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

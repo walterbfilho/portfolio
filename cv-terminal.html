@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>walter@cv:~ — Walter Barreto</title>
+  <meta name="description" content="Currículo estilo terminal — Walter Barreto, Desenvolvedor Salesforce." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/cv-terminal.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <div class="term-bar">
+      <div class="term-dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="term-title">walter@cv: ~/walter-barreto</div>
+    </div>
+
+    <main class="term-body">
+
+      <!-- WHOAMI -->
+      <section class="block">
+        <p class="line"><span class="prompt">walter@cv</span><span class="path">:~</span>$ <span class="cmd">whoami --resume</span></p>
+        <pre class="out"><span class="hl">Walter Barreto</span>  ·  Desenvolvedor Salesforce  ·  Recife/PE
+
+Apex · SOQL · LWC · Integrações REST · SAP · Sales/Service/Experience Cloud
+Faço desenvolvimento Salesforce há 3+ anos na DreamExperience. Meu dia a dia
+é integrar o CRM com sistemas externos (SAP, gateway de pagamento, portal do
+cliente) e escrever os LWCs que aparecem em cima dessas integrações.</pre>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="block">
+        <p class="line"><span class="prompt">walter@cv</span><span class="path">:~</span>$ <span class="cmd">./contact --open</span></p>
+        <div class="contact">
+          <div class="contact-row">
+            <span class="key">email</span>
+            <a href="mailto:andrebarreto.filho@gmail.com">andrebarreto.filho@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="key">phone</span>
+            <a href="tel:+5581998076626">+55 81 99807-6626</a>
+          </div>
+          <div class="contact-row">
+            <span class="key">linkedin</span>
+            <a href="https://www.linkedin.com/in/walter-barreto-947956241/">linkedin.com/in/walter-barreto-947956241</a>
+          </div>
+          <div class="contact-row">
+            <span class="key">location</span>
+            <span>Recife, Pernambuco, Brasil</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- JOURNEY -->
+      <section class="block">
+        <p class="line"><span class="prompt">walter@cv</span><span class="path">:~/journey</span>$ <span class="cmd">git log --oneline career.log</span></p>
+        <pre class="out gitlog"><span class="commit">* a1c4f2e</span> <span class="ref">(HEAD → main)</span> <span class="msg">Pleno III</span>    <span class="muted">dez/2025 → presente</span>
+<span class="commit">* 8d27fa1</span>                <span class="msg">Pleno II</span>     <span class="muted">mar/2025 → dez/2025</span>
+<span class="commit">* 4e9c102</span>                <span class="msg">Pleno I</span>      <span class="muted">ago/2024 → mar/2025</span>
+<span class="commit">* 1c0d8b3</span>                <span class="msg">Júnior III</span>   <span class="muted">jan/2024 → ago/2024</span>
+<span class="commit">* 9a5e220</span>                <span class="msg">Júnior II</span>    <span class="muted">abr/2023 → jan/2024</span>
+<span class="commit">* f0a1234</span> <span class="ref">(tag: estagio)</span> <span class="msg">Estágio</span>      <span class="muted">dez/2022 → abr/2023</span>
+<span class="muted">o  início — DreamExperience — Recife/PE — remoto/híbrido</span></pre>
+      </section>
+
+      <!-- STACK -->
+      <section class="block">
+        <p class="line"><span class="prompt">walter@cv</span><span class="path">:~/stack</span>$ <span class="cmd">cat stack.json</span></p>
+        <pre class="out json compact"><span class="punct">{</span>
+  <span class="key">"plataforma_salesforce"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Apex"</span><span class="punct">,</span> <span class="str">"SOQL"</span><span class="punct">,</span> <span class="str">"LWC"</span><span class="punct">,</span> <span class="str">"Sales Cloud"</span><span class="punct">,</span> <span class="str">"Service Cloud"</span><span class="punct">,</span> <span class="str">"Experience Cloud"</span><span class="punct">],</span>
+  <span class="key">"linguagens"</span><span class="punct">:</span>            <span class="punct">[</span><span class="str">"Apex"</span><span class="punct">,</span> <span class="str">"Java"</span><span class="punct">,</span> <span class="str">"JavaScript"</span><span class="punct">,</span> <span class="str">"Python"</span><span class="punct">],</span>
+  <span class="key">"integracoes"</span><span class="punct">:</span>           <span class="punct">[</span><span class="str">"REST (exposição/consumo)"</span><span class="punct">,</span> <span class="str">"SAP"</span><span class="punct">,</span> <span class="str">"Vindi"</span><span class="punct">,</span> <span class="str">"Reclame Aqui"</span><span class="punct">],</span>
+  <span class="key">"fundamentos"</span><span class="punct">:</span>           <span class="punct">[</span><span class="str">"POO"</span><span class="punct">,</span> <span class="str">"Lógica e estruturas de dados"</span><span class="punct">],</span>
+  <span class="key">"praticas"</span><span class="punct">:</span>              <span class="punct">[</span><span class="str">"Git"</span><span class="punct">,</span> <span class="str">"Code review"</span><span class="punct">,</span> <span class="str">"Metodologias ágeis"</span><span class="punct">],</span>
+  <span class="key">"idiomas"</span><span class="punct">:</span>               <span class="punct">{</span> <span class="key">"pt"</span><span class="punct">:</span> <span class="str">"nativo"</span><span class="punct">,</span> <span class="key">"en"</span><span class="punct">:</span> <span class="str">"intermediário"</span> <span class="punct">}</span>
+<span class="punct">}</span></pre>
+      </section>
+
+      <!-- CASES -->
+      <section class="block">
+        <p class="line"><span class="prompt">walter@cv</span><span class="path">:~/cases</span>$ <span class="cmd">ls -1 &amp;&amp; cat *.md</span></p>
+
+        <div class="case">
+          <span class="case-id">case/01</span>
+          <h3># Hotelaria &amp; Turismo</h3>
+          <p class="case-sub">Rede de resorts. Atendimento digital e portal de relacionamento.</p>
+          <ul class="tags">
+            <li>Service Cloud</li><li>Experience Cloud</li><li>Apex</li><li>LWC</li><li>Vindi</li><li>Reclame Aqui</li>
+          </ul>
+          <p class="desc">
+            Juntei atendimento, pagamento e reclamação de hóspede em um lugar só dentro do
+            Salesforce. Fiz chatbot em Service Cloud, integrei o <strong>gateway Vindi</strong>,
+            conectei o <strong>Reclame Aqui</strong> via POST/GET, montei um portal em Experience
+            Cloud com <strong>LWC de pesquisa feito na mão</strong>, e expus APIs em Apex pras
+            outras áreas puxarem dado.
+          </p>
+        </div>
+
+        <div class="case">
+          <span class="case-id">case/02</span>
+          <h3># Energia</h3>
+          <p class="case-sub">Portais externos, aprovações de VPs e linha de frente das integrações.</p>
+          <ul class="tags">
+            <li>Experience Cloud</li><li>Sales Cloud</li><li>LWC</li><li>Apex</li><li>REST</li>
+          </ul>
+          <p class="desc">
+            Peguei a maior parte das <strong>integrações</strong> do Salesforce com o mundo externo
+            dessa conta. Escrevi APIs de exposição pros portais corporativos e alguns
+            <strong>LWCs pesados</strong> pra tela de aprovação que passa por VP. Virei o dev
+            chamado quando cai integração, e sou o do time que mais viaja a São Paulo pra resolver
+            em campo.
+          </p>
+        </div>
+
+        <div class="case">
+          <span class="case-id">case/03</span>
+          <h3># Projetos independentes — multissetor</h3>
+          <p class="case-sub">Integrações SAP e customização Salesforce em cinco segmentos.</p>
+          <ul class="tags">
+            <li>SAP ↔ Salesforce</li><li>Telecom</li><li>Energia Solar</li><li>Enterprise</li><li>Finanças</li>
+          </ul>
+          <p class="desc">
+            Fora da consultoria onde sou CLT, toquei projetos próprios em cinco segmentos:
+            <strong>integração Salesforce ↔ SAP</strong>, telecom, enterprise, energia solar e
+            consultoria financeira. Regras de negócio bem diferentes, entregues sem virar
+            <strong>gambiarra de meio</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="block">
+        <p class="line"><span class="prompt">walter@cv</span><span class="path">:~</span>$ <span class="cmd">cat education.md</span></p>
+        <pre class="out compact"><span class="hl">## Formação</span>
+<strong>CESAR School</strong> · Bacharelado em Ciência da Computação · 2022 → 2025</pre>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
