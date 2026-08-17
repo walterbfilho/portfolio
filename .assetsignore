@@ -1,0 +1,8 @@
+.git/
+src/
+functions/
+wrangler.toml
+.gitignore
+.assetsignore
+DEPLOY.md
+README.md
